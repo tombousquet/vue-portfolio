@@ -50,32 +50,6 @@
       <li><a href="https://github.com/tombousquet" target="_blank" rel="noopener">GitHub</a></li>
     </ul>
     </div>
-    <div id='netlify' class='page'>
-    <h3>Netlify Projects</h3>
-    <ul>
-      <li><a href="https://this-land.netlify.app/" target="_blank" rel="noopener">This Land</a></li>
-      <li><a href="https://know-your-stuff.netlify.app/" target="_blank" rel="noopener">KnowYourStuff</a></li>
-      <li><a href="https://toms-booktracker.netlify.app" target="_blank" rel="noopener">BookTracker</a></li>
-    </ul>
-    </div>
-    <div id='skills' class='page'>
-    <h3>Skills</h3>
-    <div class='skill-list'>
-    <ul class="skill-list">
-        <li class='skills'>JavaScript</li>
-        <li class='skills'>Python</li>
-        <li class='skills'>React</li>
-        <li class='skills'>Vue</li>
-        <li class='skills'>Django</li>
-        <li class='skills'>HTML</li>
-        <li class='skills'>CSS</li>
-        <li class='skills'>GitHub</li>
-        <li class='skills'>Agile</li>
-        <li class='skills'>Trello</li>
-        <li class='skills'>Netlify</li>
-    </ul>
-    </div>
-    </div>
       </v-container>
       
     </v-sheet>
@@ -85,7 +59,7 @@
 
 <script>
   export default {
-    name: 'HelloWorld',
+    name: 'Social',
   }
     
 </script>
