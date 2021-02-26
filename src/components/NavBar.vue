@@ -17,27 +17,23 @@
         ></v-img>
       </template>
 
-      <v-app-bar-title>
-        <span class='subtitle-1'>Tom Bousquet</span>
-        </v-app-bar-title>
-
       <template v-slot:extension>
         <v-tabs center-active>
-          <v-tab>
+          <v-tab class='white--text'>
             <router-link to='/social'>Social</router-link>
             </v-tab>
-          <v-tab>
+          <v-tab class='white--text'>
             Projects
             </v-tab>
-          <v-tab>
+          <v-tab class='white--text'>
             Skills
             </v-tab>
         </v-tabs>
         <v-spacer></v-spacer>
-        <v-btn>
-          <span>email</span>
-          <v-icon>contact_mail</v-icon>
-        </v-btn>
+        <v-tab dark>
+          <span>Contact</span>
+          <v-icon right>email</v-icon>
+        </v-tab>
       </template>
     </v-app-bar>
     <v-sheet
