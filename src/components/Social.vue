@@ -5,6 +5,7 @@
 
             <div id='social' class='page'>
     <h3>Social</h3>
+    <span> what about here </span>
     <ul>
       <li><a href="https://www.linkedin.com/in/tom-bousquet/" target="_blank" rel="noopener">LinkedIn</a></li>
       <li><a href="https://github.com/tombousquet" target="_blank" rel="noopener">GitHub</a></li>

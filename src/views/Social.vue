@@ -1,17 +1,14 @@
 <template>
   <div class="social">
-    <Social />
+    <h1> my social page </h1>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Social from '@/components/Social.vue'
+
 
 export default {
-  name: 'Home',
-  components: {
-    Social
-  }
+
 }
 </script>

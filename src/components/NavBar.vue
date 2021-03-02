@@ -1,58 +1,33 @@
 <template>
-  <v-card class="overflow-hidden">
-    <v-app-bar
-      absolute
-      color="#6A76AB"
-      dark
-      shrink-on-scroll
-      prominent
-      src="https://www.goodcore.co.uk/blog/wp-content/uploads/2019/08/coding-vs-programming-2.jpg"
-      fade-img-on-scroll
-      scroll-target="#scrolling-techniques-3"
-    >
-      <template v-slot:img="{ props }">
-        <v-img
-          v-bind="props"
-          gradient="to top right, rgba(100,115,201,.7), rgba(25,32,72,.7)"
-        ></v-img>
-      </template>
-
-      <template v-slot:extension>
-        <v-tabs center-active>
-          <v-tab class='white--text'>
-            <router-link to='/social'>Social</router-link>
-            </v-tab>
-          <v-tab class='white--text'>
-            Projects
-            </v-tab>
-          <v-tab class='white--text'>
-            Skills
-            </v-tab>
-        </v-tabs>
-        <v-spacer></v-spacer>
-        <v-tab dark>
-          <span>Contact</span>
-          <v-icon right>email</v-icon>
-        </v-tab>
-      </template>
+  <nav>
+    <v-app-bar>
+    <v-app-bar-nav-icon class="grey--text" >email</v-app-bar-nav-icon>
     </v-app-bar>
-    <v-sheet
-      id="scrolling-techniques-3"
-      class="overflow-y-auto"
-      max-height="700"
-    >
-      <v-container style="height: 1500px;">
-        <div style='height: 300px;'></div>
-      </v-container>
+
+
+
       
-    </v-sheet>
-  </v-card>
-  
+
+      <v-navigation-drawer app v-model="drawer" class="indigo">
+        <v-list>
+          <v-list-tile>
+            <v-list-tile-action>
+            </v-list-tile-action>
+          </v-list-tile>
+        </v-list>
+      </v-navigation-drawer>
+    
+
+  </nav>
 </template>
 
 <script>
   export default {
-    name: 'NavBar',
+    data() {
+      return {
+        drawer: false
+      }
+    }
   }
     
 </script>

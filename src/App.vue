@@ -1,21 +1,63 @@
 <template>
-  <v-app>
-    <NavBar />
-    <v-content>
-      <router-view></router-view>
-    </v-content>
+  <v-app id="inspire">
+    <v-navigation-drawer v-model='drawer' app>
+      <v-list-item>
+        <v-list-item-content>
+          <v-list-item-title class="title">
+            Tom Bousquet
+          </v-list-item-title>
+          <v-list-item-subtitle>
+            Software Developer
+          </v-list-item-subtitle>
+        </v-list-item-content>
+      </v-list-item>
 
+      <v-divider></v-divider>
+
+      <v-list
+        dense
+        nav
+      >
+        <v-list-item
+          v-for="item in items"
+          :key="item.title"
+          :to='item.to'
+          link
+        >
+          <v-list-item-icon>
+            <v-icon>{{ item.icon }}</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title>{{ item.title }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+
+    <v-app-bar app>
+      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+
+      <v-toolbar-title>Tom Bousquet</v-toolbar-title>
+    </v-app-bar>
+
+    <v-main>
+      <router-view></router-view>
+    </v-main>
   </v-app>
 </template>
 
 <script>
-import NavBar from '@/components/NavBar'
-
-export default {
-  name: 'App',
-  components: { NavBar },
-  data: () => ({
-    //
-  }),
-};
+  export default {
+    data: () => ({
+      drawer: null,
+      items: [
+          { title: 'Projects', icon: 'mdi-view-dashboard', to: '/projects' },
+          { title: 'Skills', icon: 'plus_one', to: '/skills' },
+          { title: 'Social', icon: 'contact_page', to: '/social' },
+          { title: 'Contact', icon: 'mail', to: '/contact' },
+          { title: 'About', icon: 'hail', to: '/about' },
+        ],
+        }),
+  }
 </script>
