@@ -1,7 +1,11 @@
 <template>
   <div class='about pa-6'>
     <h1> My projects page </h1>
-    <v-card
+    <v-container>
+        <v-row>
+          <v-col
+          >
+<v-card
     class="mx-auto pt-2 mt-4"
     max-width="344"
     v-for="project in projects"
@@ -47,7 +51,9 @@
         </v-card-text>
       </div>
     </v-expand-transition>
-  </v-card>
+  </v-card>          </v-col>
+        </v-row>
+      </v-container>
   </div>
 </template>
 
