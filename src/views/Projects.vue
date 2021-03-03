@@ -1,6 +1,7 @@
 <template>
   <div class='about pa-6'>
     <h1> My projects page </h1>
+    <span>'my_gmail', 'my_template', e.target, 'user_wiBfgefZ2EPLj4W73Y6ey'</span>
     <v-container>
         <v-row>
           <v-col
