@@ -72,7 +72,7 @@
           { title: 'Skills', icon: 'plus_one', to: '/skills' },
           { title: 'Social', icon: 'contact_page', to: '/social' },
           { title: 'Contact', icon: 'mail', to: '/contact' },
-          { title: 'About', icon: 'emoji_people', to: '/about' },
+          { title: 'About', icon: 'emoji_people', to: '/' },
         ],
         }),
   }

@@ -1,8 +1,8 @@
 <template>
 <div>
 <h2 class=" ma-6">Advice, Questions, Pleasantries</h2>
-<p class="ma-6">Please reach out with job posting/company suggestions, available work opportunties, advice on tools and technologies, and general inquiries. I'm all ears. </p>
-    <div class="container mt-6">
+<p class="ma-6 title">Please reach out with job posting/company suggestions, available work opportunties, advice on tools and technologies, and general inquiries. I'm all ears. </p>
+    <div class="container mt-8">
         <form @submit.prevent="sendEmail">
           <label>Name</label>
           <input 

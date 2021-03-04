@@ -25,7 +25,7 @@
               color="orange lighten-2"
               text
               >
-                Explore
+                Learn More
               </v-btn>
               <v-spacer></v-spacer>
               <v-btn
