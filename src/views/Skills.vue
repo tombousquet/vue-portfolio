@@ -1,6 +1,5 @@
 <template>
   <div class='about pa-6'>
-    <h1> My skills page </h1>
     <v-list flat>
       <v-list-item-group
         color="primary"
@@ -25,19 +24,19 @@
   export default {
     data: () => ({
       skills: [
-          { text: 'HTML', icon: 'mdi-view-dashboard' },
-          { text: 'CSS', icon: 'plus_one' },
-          { text: 'JavaScript', icon: 'contact_page' },
-          { text: 'Python', icon: 'mail'},
-          { text: 'Django', icon: 'hail'},
-          { text: 'React', icon: 'mdi-view-dashboard' },
-          { text: 'Vue', icon: 'plus_one' },
-          { text: 'Tachyons', icon: 'contact_page' },
-          { text: 'Vuetify', icon: 'plus_one' },
-          { text: 'GitHub', icon: 'contact_page' },
-          { text: 'Netlify', icon: 'mail'},
-          { text: 'Agile', icon: 'mdi-view-dashboard' },
-          { text: 'Trello', icon: 'hail'},
+          { text: 'HTML', icon: 'article' },
+          { text: 'CSS', icon: 'change_history' },
+          { text: 'JavaScript', icon: 'picture_in_picture' },
+          { text: 'Python', icon: 'pets'},
+          { text: 'Django', icon: 'polymer'},
+          { text: 'React', icon: 'waves' },
+          { text: 'Vue', icon: 'pageview' },
+          { text: 'Tachyons', icon: 'support' },
+          { text: 'Vuetify', icon: 'text_rotation_angleup' },
+          { text: 'GitHub', icon: 'spa' },
+          { text: 'Netlify', icon: 'offline_bolt'},
+          { text: 'Agile', icon: 'view_comfy' },
+          { text: 'Trello', icon: 'tune'},
         ],
         }),
   }

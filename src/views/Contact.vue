@@ -1,6 +1,7 @@
 <template>
 <div>
-<h1>this is my contact page</h1>
+<h2 class=" ma-6">Advice, Questions, Pleasantries</h2>
+<p class="ma-6">Please reach out with job posting/company suggestions, available work opportunties, advice on tools and technologies, and general inquiries. I'm all ears. </p>
     <div class="container mt-6">
         <form @submit.prevent="sendEmail">
           <label>Name</label>
@@ -73,7 +74,7 @@ label {
 input[type=text], [type=email], textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(204, 204, 204);
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
@@ -81,11 +82,11 @@ input[type=text], [type=email], textarea {
   resize: vertical;
 }
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: #348337b5;
   color: white;
   padding: 12px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
 }
 input[type=submit]:hover {
@@ -95,8 +96,8 @@ input[type=submit]:hover {
   display: block;
   margin:auto;
   text-align: center;
-  border-radius: 5px;
-  background-color: #f2f2f2;
+  border-radius: 8px;
+  background-color: #c3f7f4;
   padding: 20px;
   width: 50%;
 }
