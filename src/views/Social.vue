@@ -30,7 +30,7 @@
       socials: [
           { title: 'LinkedIn', sub: 'linkedin.com/in/tom-bousquet', site:'https://www.linkedin.com/in/tom-bousquet/' },
           { title: 'GitHub', sub: 'github.com/tombousquet', site:'https://github.com/tombousquet' },
-          { title: 'Medium', sub: 'tom-bousquet.medium.com/', site:'https://tom-bousquet.medium.com/' },
+          { title: 'Medium', sub: 'tom-bousquet.medium.com', site:'https://tom-bousquet.medium.com/' },
         ],
         }),
   }
