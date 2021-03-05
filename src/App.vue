@@ -41,6 +41,7 @@
       dark
       prominent
       src="yosemite.jpg"
+      height='200'
     >
       <template v-slot:img="{ props }">
         <v-img
@@ -55,17 +56,6 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-heart</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-dots-vertical</v-icon>
-      </v-btn>
     </v-app-bar>
 
     <v-main>
@@ -83,7 +73,7 @@
           { title: 'Skills', icon: 'plus_one', to: '/skills' },
           { title: 'Social', icon: 'contact_page', to: '/social' },
           { title: 'Contact', icon: 'mail', to: '/contact' },
-          { title: 'About', icon: 'hail', to: '/about' },
+          { title: 'About', icon: 'emoji_people', to: '/' },
         ],
         }),
   }
