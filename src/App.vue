@@ -65,7 +65,7 @@
 <script>
   export default {
     data: () => ({
-      drawer: null,
+      drawer: false,
       items: [
           { title: 'Projects', icon: 'mdi-view-dashboard', to: '/projects' },
           { title: 'Skills', icon: 'plus_one', to: '/skills' },
