@@ -1,23 +1,28 @@
 <template>
-  <div class='about pa-6'>
-    <v-list flat>
+    <v-container class='pa-12 mt-6'>
+      <v-row class='pa-6'>
+        <v-col
+        cols='3'
+         v-for="skill in skills"
+          :key="skill.text">
+    <v-list>
       <v-list-item-group
         color="primary"
       >
         <v-list-item
-          v-for="skill in skills"
-          :key="skill.text"
         >
           <v-list-item-icon>
-            <v-icon v-text="skill.icon"></v-icon>
+            <v-icon class='black--text' v-text="skill.icon"></v-icon>
           </v-list-item-icon>
           <v-list-item-content>
-            <v-list-item-title v-text="skill.text"></v-list-item-title>
+            <v-list-item-title class='title teal--text teal--lighten-1' v-text="skill.text"></v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list-item-group>
     </v-list>
-  </div>
+        </v-col>
+      </v-row>
+    </v-container>
 </template>
 
 <script>

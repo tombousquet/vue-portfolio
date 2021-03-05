@@ -41,6 +41,7 @@
       dark
       prominent
       src="yosemite.jpg"
+      height='200'
     >
       <template v-slot:img="{ props }">
         <v-img

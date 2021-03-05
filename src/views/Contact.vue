@@ -82,7 +82,7 @@ input[type=text], [type=email], textarea {
   resize: vertical;
 }
 input[type=submit] {
-  background-color: #348337b5;
+  background-color: #26A69A;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -90,14 +90,14 @@ input[type=submit] {
   cursor: pointer;
 }
 input[type=submit]:hover {
-  background-color: #b8c7b9;
+  background-color: #00897B;
 }
 .container {
   display: block;
   margin:auto;
   text-align: center;
   border-radius: 8px;
-  background-color: #c3f7f4;
+  background-color: #E0F2F1;
   padding: 20px;
   width: 50%;
 }
