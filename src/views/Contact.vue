@@ -1,8 +1,8 @@
 <template>
 <div>
-<h2 class=" ma-6">Advice, Questions, Pleasantries</h2>
-<p class="ma-6 title">Please reach out with job posting/company suggestions, available work opportunties, advice on tools and technologies, and general inquiries. I'm all ears. </p>
-    <div class="container mt-8">
+<h3 class=" mt-6 ml-12 pl-12">Advice, Questions, Pleasantries</h3>
+<p class="ml-12 mt-2  pl-12 subtitle-1">Please reach out with job posting/company suggestions, available work opportunties, advice on tools and technologies, and general inquiries. </p>
+    <div class="container mt-6">
         <form @submit.prevent="sendEmail">
           <label>Name</label>
           <input 
@@ -73,7 +73,7 @@ label {
 }
 input[type=text], [type=email], textarea {
   width: 100%;
-  padding: 12px;
+  padding: 10px;
   border: 1px solid rgb(204, 204, 204);
   border-radius: 4px;
   box-sizing: border-box;
