@@ -1,5 +1,5 @@
 <template>
-  <div class='about pa-6'>
+  <div class='about'>
     <v-container class='pa-6 mt-12'>
       <v-row>
         <v-col cols=4

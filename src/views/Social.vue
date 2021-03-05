@@ -1,5 +1,5 @@
 <template>
-  <div class='about pa-6'>
+  <div class='about'>
     <v-container class='pa-6 mt-12'>
       <v-row>
         <v-col cols=4
@@ -9,14 +9,12 @@
             flat
             class="mx-auto pt-2 mt-4"
             max-width="344"
-            :to='social.to'
-            link
           >
-            <v-card-title class='display-2 teal--text teal--lighten-1'>
+            <v-card-title class='display-2 grey--text grey--darken-4' >
               {{social.title}}
             </v-card-title>
-            <v-card-subtitle class='title'>
-              {{social.sub}}
+            <v-card-subtitle class='title pt-1'>
+              <a class='teal--text teal--lighten-1' :href='social.site' >{{social.sub}}</a>
             </v-card-subtitle>
           </v-card>         
         </v-col>
@@ -30,9 +28,9 @@
     data: () => ({
       show: false,
       socials: [
-          { title: 'LinkedIn', sub: 'linkedin.com/in/tom-bousquet', to:'https://www.linkedin.com/in/tom-bousquet/' },
-          { title: 'GitHub', sub: 'github.com/tombousquet', to:'https://github.com/tombousquet' },
-          { title: 'Medium', sub: 'tom-bousquet.medium.com/', to:'https://tom-bousquet.medium.com/' },
+          { title: 'LinkedIn', sub: 'linkedin.com/in/tom-bousquet', site:'https://www.linkedin.com/in/tom-bousquet/' },
+          { title: 'GitHub', sub: 'github.com/tombousquet', site:'https://github.com/tombousquet' },
+          { title: 'Medium', sub: 'tom-bousquet.medium.com/', site:'https://tom-bousquet.medium.com/' },
         ],
         }),
   }
