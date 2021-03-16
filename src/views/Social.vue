@@ -1,6 +1,6 @@
 <template>
   <div class='about'>
-    <v-container class='pa-6 mt-12'>
+    <v-container class='pa-12 mt-6 ml-6'>
       <v-row>
         <v-col cols=4
           v-for="social in socials"

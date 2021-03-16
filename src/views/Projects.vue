@@ -24,6 +24,7 @@
               <v-btn
               color="teal lighten-1"
               text
+              @click="show = !show"
               >
                 Learn More
               </v-btn>

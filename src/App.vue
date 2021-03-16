@@ -3,7 +3,7 @@
     <v-navigation-drawer v-model='drawer' app>
       <v-list-item>
         <v-list-item-content>
-          <v-list-item-title class="title">
+          <v-list-item-title class="title teal--text text--lighten-1">
             Tom Bousquet
           </v-list-item-title>
           <v-list-item-subtitle>
@@ -29,7 +29,7 @@
           </v-list-item-icon>
 
           <v-list-item-content>
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
+            <v-list-item-title class='teal--text text--lighten-1'>{{ item.title }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -41,7 +41,7 @@
       dark
       prominent
       src="yosemite.jpg"
-      height='200'
+      height='150'
     >
       <template v-slot:img="{ props }">
         <v-img
@@ -52,7 +52,6 @@
 
       <v-app-bar-nav-icon @click='drawer = !drawer'></v-app-bar-nav-icon>
 
-      <v-app-bar-title class='pl0' width='165'>Tom Bousquet</v-app-bar-title>
 
     </v-app-bar>
 
@@ -67,11 +66,11 @@
     data: () => ({
       drawer: false,
       items: [
+          { title: 'About', icon: 'emoji_people', to: '/' },
           { title: 'Projects', icon: 'mdi-view-dashboard', to: '/projects' },
           { title: 'Skills', icon: 'plus_one', to: '/skills' },
           { title: 'Social', icon: 'contact_page', to: '/social' },
           { title: 'Contact', icon: 'mail', to: '/contact' },
-          { title: 'About', icon: 'emoji_people', to: '/' },
         ],
         }),
   }

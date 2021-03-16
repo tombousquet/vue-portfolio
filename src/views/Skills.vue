@@ -1,6 +1,6 @@
 <template>
-    <v-container class='pa-12 mt-6 ml-6'>
-      <v-row class='pa-6'>
+    <v-container class='center mt-6'>
+      <v-row class='pt-6'>
         <v-col
         cols='3'
          v-for="skill in skills"
@@ -9,7 +9,7 @@
       <v-list-item-group
         color="primary"
       >
-        <v-list-item
+        <v-list-item class='pe-1'
         >
           <v-list-item-icon>
             <v-icon class='black--text' v-text="skill.icon"></v-icon>
