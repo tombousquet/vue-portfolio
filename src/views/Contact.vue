@@ -1,7 +1,7 @@
 <template>
 <div>
 <h3 class=" mt-6 ml-12 pl-12">Advice, Questions, Pleasantries</h3>
-<p class="ml-12 mt-2  pl-12 subtitle-1">Please reach out with job posting/company suggestions, available work opportunties, advice on tools and technologies, and general inquiries. </p>
+<p class="ml-12 mt-2  pl-12 subtitle-1">Please reach out with job posting/company suggestions, available work opportunities, advice on tools and technologies, and general inquiries. </p>
     <div class="container mt-6">
         <form @submit.prevent="sendEmail">
           <label>Name</label>
