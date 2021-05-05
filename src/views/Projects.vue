@@ -40,7 +40,7 @@
               <div v-show="project.show">
                 <v-divider></v-divider>
                 <v-card-text>
-                  {{project.text}}
+                  {{project.text}} 
                 </v-card-text>
                 
               </div>
