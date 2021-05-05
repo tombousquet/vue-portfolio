@@ -24,20 +24,20 @@
               <v-btn
               color="teal lighten-1"
               text
-              @click="show = !show"
+              @click="project.show = !project.show"
               >
                 Learn More
               </v-btn>
               <v-spacer></v-spacer>
               <v-btn
                 icon
-                @click="show = !show"
+                @click="project.show = !project.show"
               >
-                <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                <v-icon>{{ project.show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
               </v-btn>
             </v-card-actions>
             <v-expand-transition>
-              <div v-show="show">
+              <div v-show="project.show">
                 <v-divider></v-divider>
                 <v-card-text>
                   {{project.text}}
@@ -55,11 +55,22 @@
 <script>
   export default {
     data: () => ({
-      show: false,
       projects: [
-        {id: '1', image: "thisland.png", title: "This Land" , sub: "Share personal histories about your community." , site:'https://this-land.netlify.app/', text: "This Land is a React web app utilizing a Django backend and multiple MapBox features so users can find points of interest close to their location as well as add their own to the map."},
-        {id: '2', image: "booktracker.png", title: "BookTracker" , sub: "What's on your reading list?" , site:'https://toms-booktracker.netlify.app/', text: "Keep track of what you've read and what you want to read while taking notes on your current book."},
-        {id: '3', image: "kys.png", title: "KnowYourStuff" , sub: "Test your trivia knowledge." , site:'https://know-your-stuff.netlify.app/', text: "Think you know it all? Prove it. Try answering questions from your favorite categories."},
+        {id: '1', image: "thisland.png", title: "This Land" , 
+          sub: "Share personal histories about your community." , 
+          site:'https://this-land.netlify.app/', 
+          text: "This Land is a React web app utilizing a Django backend and multiple MapBox features so users can find points of interest close to their location as well as add their own to the map.", 
+          show: false},
+        {id: '2', image: "booktracker.png", title: "BookTracker", 
+          sub: "What's on your reading list?" , 
+          site:'https://toms-booktracker.netlify.app/', 
+          text: "Keep track of what you've read and what you want to read while taking notes on your current book.", 
+          show: false},
+        {id: '3', image: "kys.png", title: "KnowYourStuff" , 
+          sub: "Test your trivia knowledge." , 
+          site:'https://know-your-stuff.netlify.app/', 
+          text: "Think you know it all? Prove it. Try answering questions from your favorite categories.", 
+          show: false},
         ],
         }),
   }
